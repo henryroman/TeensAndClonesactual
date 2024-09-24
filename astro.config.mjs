@@ -6,7 +6,7 @@ import icon from "astro-icon";
 import preact from '@astrojs/preact';
 
 export default defineConfig({
-  site: "https://anavue.org",
+  site: "https://teensandclones.com",
   base: "/",
   integrations: [tailwind(), mdx(), sitemap(), icon(), preact()],
   vite: {

@@ -24,14 +24,14 @@ const menuitems = [
   },
 ];
 
-import {webhook2} from "../../../config";
-import {webhook3} from "../../../config";
+// import {webhook2} from "../../../config";
+// import {webhook3} from "../../../config";
 
-const clonelink = await fetch(webhook3).then((response) => response.text());
-const teenlink = await fetch(webhook2).then((response) => response.text());
+// const clonelink = await fetch(webhook3).then((response) => response.text());
+// const teenlink = await fetch(webhook2).then((response) => response.text());
 
-const clonelink1 = "/" + clonelink
-const teenlink1 = "/" + teenlink
+// const clonelink1 = "/" + clonelink
+// const teenlink1 = "/" + teenlink
 ---
 
 <Container>
@@ -63,7 +63,7 @@ const teenlink1 = "/" + teenlink
         </ul>
         <div class="lg:hidden flex items-center mt-3 gap-4">
           <Link href="tel:+1-714-222-0114" block size="md">Call us</Link>
-          <Link href={teenlink1} download={teenlink} size="md" block>Menu </Link>
+          <Link href="public/CalamusNurseryMenuTeens2024-25.pdf" download="CalamusNurseryMenuTeens2024-25.pdf" size="md" block> Menu </Link>
         </div>
       </MenuItems>
     </Astronav>

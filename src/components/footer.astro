@@ -1,14 +1,14 @@
 ---
 const currentYear = new Date().getFullYear();
 
-import {webhook2} from "../../config";
-import {webhook3} from "../../config";
+// import {webhook2} from "../../config";
+// import {webhook3} from "../../config";
 
-const clonelink = await fetch(webhook3).then((response) => response.text());
-const teenlink = await fetch(webhook2).then((response) => response.text());
+// const clonelink = await fetch(webhook3).then((response) => response.text());
+// const teenlink = await fetch(webhook2).then((response) => response.text());
 
-const clonelink1 = "/" + clonelink
-const teenlink1 = "/" + teenlink
+// const clonelink1 = "/" + clonelink
+// const teenlink1 = "/" + teenlink
 ---
 <div class="grid justify-items-center mt-48 mb-5">
   <div class="card">
@@ -59,8 +59,8 @@ const teenlink1 = "/" + teenlink
       <ul class="flex flex-col">
         <li class="mb-2"><a href="/" class="text-gray-600 hover:text-gray-900">Home</a></li>
         <li class="mb-2"><a href="/strainList" class="text-gray-600 hover:text-gray-900">Strains</a></li>
-        <li class="mb-2"><a href={clonelink1} download={clonelink} class="text-gray-600 hover:text-gray-900">Clone   inventory</a></li>
-        <li class="mb-2"><a href={teenlink1} download={teenlink} class="text-gray-600 hover:text-gray-900">Teen inventory</a></li>
+        <li class="mb-2"><a href="public/CalamusNurseryMenu.pdf" download="CalamusNurseryMenu.pdf" class="text-gray-600 hover:text-gray-900">Clone   inventory</a></li>
+        <li class="mb-2"><a href="public/CalamusNurseryMenuTeens2024-25.pdf" download="CalamusNurseryMenuTeens2024-25.pdf" class="text-gray-600 hover:text-gray-900">Teen inventory</a></li>
         <li class="mb-2"><a href="/contact" class="text-gray-600 hover:text-gray-900">Contact Us</a></li>
       </ul>
     </div>

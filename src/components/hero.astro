@@ -3,14 +3,14 @@ import { Picture } from "astro:assets";
 import myimage from "../../public/heroimages.jpg";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon/components";
-import {webhook2} from "../../config";
-import {webhook3} from "../../config";
+// import {webhook2} from "../../config";
+// import {webhook3} from "../../config";
 
-const clonelink = await fetch(webhook3).then((response) => response.text());
-const teenlink = await fetch(webhook2).then((response) => response.text());
+// const clonelink = await fetch(webhook3).then((response) => response.text());
+// const teenlink = await fetch(webhook2).then((response) => response.text());
 
-const clonelink1 = "/" + clonelink
-const teenlink1 = "/" + teenlink
+// const clonelink1 = "/" + clonelink
+// const teenlink1 = "/" + teenlink
 ---
 <style>
   /* Dropdown container */
@@ -77,18 +77,18 @@ const teenlink1 = "/" + teenlink
         <!-- Dropdown Content -->
         <div class="dropdown-content">
           <Link
-            href={teenlink1}
-            download={teenlink}
-            class="flex gap-1 items-center px-4 py-2"
-          >
-            Teen Menu
-          </Link>
-          <Link
-            href={clonelink1}
-            download={clonelink}
+            href="/public/CalamusNurseryMenu.pdf"
+            download="CalamusNurseryMenu.pdf"
             class="flex gap-1 items-center px-4 py-2"
           >
             Clone Menu
+          </Link>
+          <Link
+            href="/public/CalamusNurseryMenuTeens2024-25.pdf"
+            download="CalamusNurseryMenuTeens2024-25.pdf"
+            class="flex gap-1 items-center px-4 py-2"
+          >
+          Teen Menu
           </Link>
         </div>
       </div>
