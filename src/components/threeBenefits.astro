@@ -1,5 +1,10 @@
+---
+import { Picture } from "astro:assets";
+import myimage4 from "../../public/IMG_4022.jpg";
+---
+
 <!-- Image visible only on mobile (hidden on larger screens) -->
-<div class="block lg:hidden" style="margin-top: 75px; margin-bottom: -130px">
+<div class="block lg:hidden" style="margin-top: 75px; margin-bottom: -90px">
     <img src="/heroimages.jpg" alt="Mobile Image" class="w-full h-auto rounded-lg" />
 </div>
 
@@ -34,3 +39,8 @@
         </p>
     </div>
 </div>
+
+
+<div class="video-placeholder mx-auto max-w-full sm:px-6 lg:hidden mt-16 mb-n10">
+    <Picture src={myimage4} alt="Greenhouse" class="w-full h-auto rounded-lg" />
+  </div>
