@@ -1,3 +1,9 @@
+---
+import { Picture } from "astro:assets";
+import myimage2 from "../../public/IMG_3999.jpg";
+---
+
+
 <!-- Ready to Flower Section -->
 <div id="loading-screen" class="fixed inset-0 flex items-center justify-center bg-white z-50">
   <div class="flex-col gap-4 w-full flex items-center justify-center">
@@ -17,7 +23,7 @@
     <div class="flex flex-col lg:flex-row gap-8">
         <!-- Image on the left for larger screens -->
         <div class="lg:w-1/2 flex justify-center">
-            <img src="/readytoflower2.jpg" alt="Ready to Flower" class="rounded-lg w-full lg:max-w-lg" />
+            <Picture src={myimage2} alt="Ready to Flower" class="rounded-lg w-full lg:max-w-lg" />
         </div>
         <!-- Text Content -->
         <div class="lg:w-1/2">
