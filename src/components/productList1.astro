@@ -128,7 +128,8 @@ function getLogoUrl(slug: string): string | null {
               const logoUrl = getLogoUrl(product2.slug);
 
               return (
-                <a href={`/products/${product2.slug}`} class="group" key={product2.slug}>
+              <div style="border: 2px solid black; border-radius: 15px; padding: 10px; background-color: beige;" class="lg:hover:scale-110 transform transition duration-200">
+                <a href={`/products/${product2.slug}`} class="group" key={product2.slug} >
                   <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
                     {imageUrl ? (
                       <img
@@ -155,18 +156,18 @@ function getLogoUrl(slug: string): string | null {
                   </div>
                   <p class="mt-1 text-lg font-sm text-gray-900">{product2.description5}</p>
                 </a>
+              </div>
               );
             })
           ) : (
             <p class="text-center text-gray-500">No products available.</p>
           )}
         </div>
-      )}
     </div>
   </div>
 </div>
 
-<!-- JS for loading logic -->
+
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     const images = document.querySelectorAll("img");
