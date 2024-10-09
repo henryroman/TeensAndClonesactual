@@ -42,7 +42,7 @@ const menuitems = [
         <a href="/" class="text-lg flex items-center">
           <img src="https://i.ibb.co/yskhSQs/calamus-logo.png" alt="Calamus Nursery Logo" class="h-12 w-auto" /> <!-- Adjust height as needed -->
         </a>
-        <div class="block lg:hidden " >
+        <div class="block lg:hidden">
           <MenuIcon class="w-4 h-4 text-gray-800" />
         </div>
       </div>
@@ -68,9 +68,34 @@ const menuitems = [
       </MenuItems>
     </Astronav>
     <div>
-      <div class="hidden lg:flex items-center gap-4">
-        <a href="tel:+1-714-222-0114" style="font-weight: 800;">Call us</a>
-        <Link href="public/CalamusNurseryMenu.pdf" download="CalamusNurseryMenu.pdf" size="md">Menu</Link>
+      <div>
+        <div class="hidden lg:flex items-center gap-4">
+          <a href="tel:+1-714-222-0114" style="font-weight: 800;">Call us</a>
+
+          <!-- Updated Inventory Button with Hidden Buttons using Checkbox Hack -->
+          <div class="relative inline-block">
+            <!-- Hidden Checkbox Input -->
+            <input type="checkbox" id="toggleInventory" class="hidden peer" />
+            <!-- Label Styled as Main Button -->
+            <label for="toggleInventory" class="bg-black hover:bg-black text-white font-bold py-2 px-4 rounded transition duration-1000 cursor-pointer">
+              Inventory
+            </label>
+
+            <!-- Hidden Buttons (Revealed when Checkbox is Checked) -->
+            <div class="absolute top-full mt-2 space-x-2 hidden peer-checked:flex">
+              <a href="public/CalamusNurseryMenu.pdf" download="CalamusNurseryMenu.pdf">
+                <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-1000">
+                  Clone Inventory
+                </button>
+              </a>
+              <a href="public/CalamusNurseryMenuTeens2024-25.pdf" download="CalamusNurseryMenuTeens2024-25.pdf">
+                <button class="bg-black hover:bg-black text-white font-bold py-2 px-4 rounded transition duration-1000">
+                  Teen Inventory
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </header>
